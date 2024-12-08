@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <title>Kalkulator</title>
+</head>
+<body>
+    <h1>Kalkulator</h1>
+
+    <div id="result"></div>
+
+    <input type="number" id="num1" placeholder="Prvi broj" required>
+    <input type="number" id="num2" placeholder="Drugi broj" required>
+    <select id="operation">
+        <option value="add">Zbroji</option>
+        <option value="subtract">Oduzmi</option>
+        <option value="multiply">Pomnoži</option>
+        <option value="divide">Podijeli</option>
+    </select>
+    <button id="calculate">Izračunaj</button>
+
+    <script>
+        document.getElementById('calculate').addEventListener('click', function() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const operation = document.getElementById('operation').value;
+            let result;
+
+            if (isNaN(num1) || isNaN(num2)) {
+                result = 'Molimo unesite valjane brojeve!';
+            } else {
+                switch (operation) {
+                    case 'add':
+                        result = num1 + num2;
+                        break;
+                    case 'subtract':
+                        result = num1 - num2;
+                        break;
+                    case 'multiply':
+                        result = num1 * num2;
+                        break;
+                    case 'divide':
+                        result = num2 !== 0 ? num1 / num2 : 'Dijeljenje s nulom nije dozvoljeno!';
+                        break;
+                }
+            }
+
+            document.getElementById('result').innerText = 'Rezultat: ' + result;
+        });
+    </script>
+
+</body>
+</html>

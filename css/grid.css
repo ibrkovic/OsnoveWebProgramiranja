@@ -1,0 +1,165 @@
+.grid-container, .grid-container > div { 
+    border: 1px solid #000; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr; 
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        'header header'
+        'column1 column2'
+        'footer footer';
+    grid-gap: none;
+}
+
+.header { 
+    grid-area: header;
+    text-align: center;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.aspira-logo {
+    border: 1px solid black;
+}
+
+.first-column { 
+    grid-area: column1; 
+}
+
+.second-column { 
+    grid-area: column2; 
+}
+
+.second-column {
+    display: flex;
+    justify-content: center;  
+}
+
+.sidebar {
+    text-align: center;
+}
+
+
+.footer { 
+    grid-area: footer; 
+    text-align: center;
+}
+
+.header, .footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #2b5c7a;
+    color: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #2b5c7a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-image {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    background: #346786;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.navigacija {
+    background: #346786;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.navigacija ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navigacija ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navigacija ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navigacija ul li a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #35424a;
+}
+
+.book-image {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #2b5c7a;
+    color: #ffffff;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="knjige, knjižara, online kupovina, literatura">
+    <title>Moja stranica</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <script src="js/skripta.js" defer></script>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <img src="images/aspira.png" alt="Logo" class="aspira-logo">
+            <nav class="navigacija">
+                <ul>
+                    <li><a href="BookStore.html">Naslovnica</a></li>
+                    <li><a href="css/styles.css">CSS</a></li>
+                    <li><a href="grid.html">Grid</a></li>
+                    <li><a href="#preporukaKnjige">Tablica</a></li>
+                    <li><a href="js/jsPrimjeri.html">jsPrimjeri</a></li>
+                    <li><a href="js/skripta.js">JS</a></li>
+                    <li><a href="js/kalkulator.html">Kalkulator</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="first-column">
+            <header>
+                <h1 id="naslov">Dobrodošli u Book Store</h1>
+                <img src="images/slika1.jpg" alt="Slika knjižare" class="header-image">
+            </header>
+
+            <nav>
+                <ul>
+                    <li><a href="#knjige">Knjige</a></li>
+                    <li><a href="#printables">Printables</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <section id="knjige">
+                    <h2>Knjige</h2>
+                    <article>
+                        <h3>Knjiga debelih korica</h3>
+                        <p><strong>Proizvođač:</strong> Netko</p>
+                        <p>Cijena: <strong>€30.00</strong></p>
+                        <img src="images/slika2.jpg" alt="Item 1" class="book-image">
+                    </article>
+                </section>
+
+                <section id="printables">
+                    <h2>Drugi proizvodi</h2>
+                    <article>
+                        <h3>Bojanke</h3>
+                        <p><strong>Proizvođač:</strong> Netko drugi</p>
+                        <p>Cijena: <strong>€1.50</strong></p>
+                        <img src="images/slika3.jpg" alt="Item 2" class="book-image">
+                    </article>
+                </section>
+
+                <section id="artikli">
+                    <h2>Lista naših artikala</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Artikl</th>
+                                <th>Cijena</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Knjiga debelih korica</td>
+                                <td>€30.00</td>
+                            </tr>
+                            <tr>
+                                <td>Printable</td>
+                                <td>€1.50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section id="kontakt">
+                    <h2>Kontakt</h2>
+                    <p>Kontaktirajte nas na: <a href="mailto:info@knjizara.com">info@knjizara.com</a></p>
+                    <p>Adresa: Ulica Knjiga 1, Split, Hrvatska</p>
+                    <p>Telefon: <a href="tel:+38511234567">01/1234-567</a></p>
+                </section>
+                
+                <section>
+                    <h2>Promijeni naslov</h2>
+                    <button onclick="changeText()">Promijeni naslov</button>
+                </section>
+
+                <section id="preporukaKnjige">
+                    <h2>Preporuči knjigu koja ti se svidjela!</h2>
+                    <input type="text" id="novaKnjiga" placeholder="Prepouči knjigu">
+                    <button onclick="addBook()">Dodaj knjigu</button>
+                    <ol id="listaKnjiga"></ol>
+                </section>
+                
+                <section>
+                    <h2>Promijeni stil naslova</h2>
+                    <button onclick="changeStyle()">Promijeni stil naslova</button>
+                </section>
+                
+                <section>
+                    <h2>Unesite e-mail</h2>
+                    <input type="email" id="email" placeholder="Unesite svoj e-mail">
+                    <button onclick="printEmail()">Ispiši e-mail</button>
+                    <div id="ispisEmaila"></div>
+                </section>
+                
+            </main>
+        </div>
+        
+        <div class="second-column">
+            <div class="sidebar">
+                <section>
+                    <h2>Promijeni stil svih gumba</h2>
+                    <button id="changeButtonsStyle">Promijeni stil svih gumba</button>
+                </section>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2024 Ivan Brković</p>
+        </div>
+    </div>
+</body>
+</html>
